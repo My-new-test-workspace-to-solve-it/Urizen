@@ -14,3 +14,7 @@ jobs:
       - name: name test
         run: |
           echo "test message"
+      - name: GitHub Issue
+        uses: Gatubel/github-issue-due-dates-action@latest
+        with:
+          GH_TOKEN: "${{ secrets.GH_TOKEN }}"
