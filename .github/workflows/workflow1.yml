@@ -14,7 +14,9 @@ jobs:
       - name: name test
         run: |
           echo "test message"
-      - name: GitHub Issue
-        uses: Gatubel/github-issue-due-dates-action@master
-        with:
-          GH_TOKEN: "${{ secrets.GH_TOKEN }}"
+          actions:
+          - action: send email
+            type: "EMAIL"
+            title: "$title"
+            content: "<b>this is a message test</b>"
+             recipients: "carlos7981my@gmail.com"
