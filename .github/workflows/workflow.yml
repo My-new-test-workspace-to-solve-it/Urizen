@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: GitHub Issue Due Dates Action
+        run: |
+          echo "test message"
         uses: Gatubel/github-issue-due-dates-action@latest
         with:
           GH_TOKEN: "${{ secrets.GH_TOKEN }}"
+        
