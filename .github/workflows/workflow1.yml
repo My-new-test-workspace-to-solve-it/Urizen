@@ -15,8 +15,15 @@ jobs:
         run: |
           echo "test message"
           actions:
-          - action: send email
-            type: "EMAIL"
-            title: "$title"
-            content: "<b>this is a message test</b>"
-             recipients: "carlos7981my@gmail.com"
+      - name: Enviar correo electrónico
+        uses: actions/send-email-action@v1
+        with:
+          to: carlos7981my@gmail.com
+          subject: Hola desde GitHub
+          body: |
+            Hola,
+
+            Este es un correo electrónico enviado desde un flujo de trabajo de GitHub.
+
+            Saludos,
+            Tu nombre
