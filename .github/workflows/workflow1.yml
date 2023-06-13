@@ -14,7 +14,6 @@ jobs:
       - name: name test
         run: |
           echo "test message"
-          actions:
       - name: Enviar correo electrónico
         uses: actions/send-email-action@v1
         with:
