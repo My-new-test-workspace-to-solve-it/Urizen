@@ -15,4 +15,4 @@ jobs:
         run: |
           echo "test message"
       - name: Enviar correo electrónico
-        uses: LittleUserGithub/sendemail@1.0.0
+        uses: LittleUserGithub/sendemail@0.0.0
