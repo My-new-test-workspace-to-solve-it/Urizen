@@ -8,11 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: GitHub Issue Due Dates Action
-        uses: alexleventer/github-issue-due-dates-action@1.2.0
+        uses: LittleUserGithub/github-issue-due-dates-action.git@master
         with:
           GH_TOKEN: "${{ secrets.GH_TOKEN }}"
       - name: name test
         run: |
           echo "test message"
-      - name: Enviar correo electrónico
-        uses: LittleUserGithub/sendemail@0.0.0
