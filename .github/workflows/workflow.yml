@@ -11,6 +11,8 @@ jobs:
         uses: JoseBilbao/github-issue-due-dates-action@main
         with:
           GH_TOKEN: "${{ secrets.GH_TOKEN }}"
+          MJ_APIKEY_PRIVATE: "${{ secret.MJ_APIKEY_PRIVATE }}"
+          MJ_APIKEY_PUBLIC: "${{ secret.MJ_APIKEY_PUBLIC }}"
       - name: name test
         run: |
           echo "test message"
