@@ -10,9 +10,9 @@ jobs:
       - name: GitHub Issue Due Dates Action
         uses: JoseBilbao/github-issue-due-dates-action@main
         with:
-          GH_TOKEN: "${{ secrets.GH_TOKEN }}"
-          MJ_APIKEY_PRIVATE: "${{ secrets.MJ_APIKEY_PRIVATE }}"
-          MJ_APIKEY_PUBLIC: "${{ secrets.MJ_APIKEY_PUBLIC }}"
+          GH_TOKEN: ${{secrets.GH_TOKEN}}
+          MJ_APIKEY_PRIVATE: ${{secrets.MJ_APIKEY_PRIVATE}}
+          MJ_APIKEY_PUBLIC: ${{secrets.MJ_APIKEY_PUBLIC}}
       - name: name test
         run: |
           echo "test message"
