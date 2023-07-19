@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: GitHub Issue Due Dates Action
-        uses: Moodbit/github-issue-due-dates-action@main
+        uses: JoseBilbao/github-issue-due-dates-action@main
         with:
           GH_TOKEN: "${{ secrets.GH_TOKEN }}"
       - name: name test
